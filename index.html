@@ -7,6 +7,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -14,22 +20,30 @@
 
       <select id="city">
         <option value="">Select a city...</option>
-        <option value="current">My location</option>
-        <option value="Europe/London">London</option>
-        <option value="America/New_York">New York</option>
-        <option value="Australia/Sydney">Sydney</option>
+        <option value="current">📍 My location</option>
+        <option value="Europe/London">🇬🇧 London</option>
+        <option value="America/New_York">🇺🇸 New York</option>
+        <option value="Australia/Sydney">🇦🇺 Sydney</option>
+        <option value="Asia/Tokyo">🇯🇵 Tokyo</option>
       </select>
       <div id="cities">
         <div class="city" id="los-angeles">
           <div>
-            <h2>Los Angeles</h2>
+            <h2>🇺🇸 Los Angeles</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="bangkok">
+          <div>
+            <h2>🇹🇭 Bangkok</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
         </div>
         <div class="city" id="paris">
           <div>
-            <h2>Paris</h2>
+            <h2>🇫🇷 Paris</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
